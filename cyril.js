@@ -16,6 +16,11 @@ const talent1 = [
     "kiatan",
 ];
 
+const name = [
+    "ryan",
+    "Ryan",
+]
+
 const randomtalent = (talent) => talent[Math.floor(Math.random()*talent.length)];
 const randomtalent1 = (talent1) => talent1[Math.floor(Math.random()*talent1.length)];
 
@@ -35,12 +40,12 @@ button.addEventListener('click', function() {
     const node = document.createTextNode(`${input.value}, you are a good ${randomtalent(talent)}!`);
     const node1 = document.createTextNode(`${input.value}, ${randomtalent1(talent1)}!`);    
     
-    if(input.value === 'ryan', 'Ryan', 'RYAN', 'maq', 'mak', 'Maq', 'Mak', 'MAQ', 'MAK') {
-        par.appendChild(node1);
-        div1.appendChild(par);
-        rem = div.appendChild(div1);
-        input.value = "";
-    }
+    // if(input.value === name[]) {
+    //     par.appendChild(node1);
+    //     div1.appendChild(par);
+    //     rem = div.appendChild(div1);
+    //     input.value = "";
+    // }
     
     if(input.value.length >0) {
         par.appendChild(node);
